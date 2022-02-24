@@ -1,0 +1,168 @@
+*,
+* ::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+/* ================= Typography ================ */
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 5em;
+}
+
+.intro--bold--text {
+  font-weight: 900;
+}
+
+.intro--color--text {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: #02302f;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+.top__text {
+  font-size: 0.8rem;
+  color: #f18119;
+  font-weight: 900;
+  text-transform: uppercase;
+  order: -1;
+  border-top: 5px solid #f18119;
+  margin-top: 0;
+}
+
+.fine__print {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+/* ==================== Intro section ================= */
+
+.intro {
+  background-color: #404040;
+  background-image: url(../images/zebras.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.main__content {
+  padding: 2em 1em;
+}
+
+.intro > *,
+.main-content > * {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.5em;
+  border-color: #4040405d;
+  box-shadow: rgba(50, 50, 93, 0.123) 0px 15px 30px -6px inset,
+    rgba(0, 0, 0, 0.123) 0px 9px 16px -9px inset;
+}
+
+input:focus {
+  transform: scale(1.0325);
+  transition: transform 250ms;
+}
+
+button {
+  border-radius: 0.3em;
+  padding: 1em 1.5em;
+  margin: 0.8em 0;
+  width: 100%;
+
+  background-color: #02302f;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: transform 250ms;
+}
+
+button:hover,
+button:focus {
+  background-color: #f18119f3;
+  transition: background-color 260ms;
+  transform: scale(1.0325);
+}
+
+/* media queries */
+
+@media (min-width: 1175px) {
+  /* fonts */
+
+  body {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  /* elements */
+
+  .flex-container {
+    display: flex;
+    height: 100%;
+  }
+
+  .intro {
+    width: 60%;
+    min-height: 100vh;
+  }
+
+  .main__content {
+    width: 40%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form {
+    min-width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
